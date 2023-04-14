@@ -25,6 +25,12 @@ submitButton.addEventListener('click', async () => {
   loading.style.display = 'none';
 });
 
+questionInput.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    submitButton.click();
+  }
+});
+
 async function askJesus(question) {
   const apiUrl = 'https://obscure-eyrie-44113.herokuapp.com/api/v1/chatgpt';
   const prompt = `You are to embody the persona of Jesus, responding to questions as He would. Adapt your tone based on the tone of the question being asked. Keep the responses within the context of Christian beliefs, appropriate for a PG-13 audience, and limit them to 85 words or less. Only provide the answer to the question, nothing else. The specific question you need to answer will be provided below. Quesion: ${question}`;
