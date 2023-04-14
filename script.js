@@ -11,7 +11,6 @@ submitButton.addEventListener('click', async () => {
   const question = questionInput.value.trim();
   if (!question) return;
 
-  answerContainer.style.display = 'none';
   loading.style.display = 'block';
 
   const answer = await askJesus(question);
@@ -22,7 +21,7 @@ submitButton.addEventListener('click', async () => {
 
   questionInput.value = ''; // Clear the input value
   questionInput.setAttribute('placeholder', question); // Set the placeholder
-  answerContainer.style.display = 'block';
+  answerContainer.style.display = 'flex';
   loading.style.display = 'none';
 });
 
