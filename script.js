@@ -25,7 +25,7 @@ submitButton.addEventListener('click', async () => {
   loading.style.display = 'none';
 });
 
-questionInput.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function(event) {
   if (event.key === 'Enter') {
     submitButton.click();
   }
