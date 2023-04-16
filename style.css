@@ -181,7 +181,6 @@ button:hover {
   text-align: center; /* Add this line to center the text horizontally */
 }
 
-
 @media (max-width: 768px) {
   .input-container {
     flex-direction: column;
