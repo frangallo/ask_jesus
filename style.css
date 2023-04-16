@@ -11,6 +11,7 @@ html {
   font-size: 48px;
   text-align: center;
   margin-top: 10px;
+  padding-bottom: 15px;
 }
 
 body {
@@ -28,8 +29,8 @@ body {
 .container {
   width: 60%;
   min-height: 190px;
-  max-width: 800px;
-  padding: 20px;
+  max-width: 584px;
+  padding: 0px 20px 20px;
   background-color: white;
   border: 1px solid #dee2e6;
   border-radius: 5px;
@@ -38,7 +39,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -225px;
 }
 
 .secondary-container {
@@ -69,7 +69,6 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 20px;
 }
 
 input[type="text"] {
@@ -102,7 +101,6 @@ button:hover {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 20px;
   background-color: #f8f9fa;
   border: 1px solid #ced4da;
   border-radius: 4px;
@@ -151,11 +149,38 @@ button:hover {
   }
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
 .container-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-bottom: 75px;
 }
+
+
+.smaller-container {
+  min-height: 30px; /* Adjust this value to the desired height */
+  margin-top: 20px;
+  position: relative;
+}
+
+.smaller-container-content {
+  position: absolute;
+  top: 50%;
+  width: 100%; /* Ensure the div takes up 100% width */
+  transform: translateY(-50%);
+  text-align: center; /* Add this line to center the text horizontally */
+}
+
 
 @media (max-width: 768px) {
   .input-container {
